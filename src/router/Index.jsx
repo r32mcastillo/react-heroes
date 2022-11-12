@@ -36,5 +36,5 @@ export const router = createBrowserRouter([
 	}
 
 ]
-	//,{basename:'casa'}
+	,{basename:'https://r32mcastillo.github.io/react-heroes/'}
 );
