@@ -1,5 +1,5 @@
 <div align="right">
-  <img src="src/assets/logos/log-2.png" alt="logo" width="50" height="auto" />
+  <img src="https://raw.githubusercontent.com/r32mcastillo/reactpractico/main/src/assets/logos/log-2.png" alt="logo" width="50" height="auto" />
 </div>
 
 
