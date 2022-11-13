@@ -1,60 +1,60 @@
-# React vite 
+<div align="right">
+  <img src="src/assets/logos/log-2.png" alt="logo" width="50" height="auto" />
+</div>
 
-Crear proyecto
-`
+
+<!-- About the Project -->
+## :star2: React Heroes
+
+### :gear: Instalación 
+```
+git clone https://github.com/r32mcastillo/react-heroes.git
+//Para instalar las dependencias
+yarn
+// Iniciar app
+yarn dev
+```
+
+### :gear: Crear proyecto
+
+```
 yarn create vite
     react
     js
-`
-
-Para instalar las dependencias
-`yarn`
-// Iniciar app
-`yarn dev`
-
-
-Router 
-https://reactrouter.com/en/main/start/tutorial
-
-
-
-
-
-
-// proptypes
-`yarn add prop-types`
-
-// para hacer las pruebas
-//https://jestjs.io/docs/getting-started
-yarn add -D jest
-yarn add -D @types/jest
-yarn add --dev babel-jest @babel/core @babel/preset-env
-
-//https://testing-library.com/docs/react-testing-library/intro
-yarn add --dev @testing-library/react
-yarn -D add jest-environment-jsdom
-yarn -D add @babel/preset-react
-./babel.config.json
-./jest.config.json
-
-°. Instalaciones:
-```
-yarn add --dev jest babel-jest @babel/preset-env @babel/preset-react 
-yarn add --dev @testing-library/react @types/jest jest-environment-jsdom
 ```
 
-°. Crear la configuración de babel __babel.config.js__
+__proptypes__
+```yarn add prop-types```
+__React Router__
+```yarn add react-router-dom```
+
+
+#### 🚀 deploy
 ```
-{ "presets": [ 
-    [ "@babel/preset-env", { "targets": { "node": "current" } } ] ,
-    [ "@babel/preset-react", { "runtime": "automatic" } ] 
-] }
+yarn add -D gh-pages
 ```
-°. Crear la configuración de babel __jest.config.js__
+__Configurar vite.config.js__
+``` 
+export default defineConfig({
+  plugins: [react()],
+  base:'/react-heroes/'
+})
 ```
-{
-    "testEnvironment":"jest-environment-jsdom"
-}
+__Configurar src\router\Index.jsx__
+``` 
+... 
+,{basename:'/react-heroes/'}
+);
+```
+```
+yarn build
+yarn deploy
 ```
 
-[React: De cero a experto ( Hooks y MERN )](https://www.udemy.com/course/react-cero-experto/)
+__Crear el archivo deploy.sh__
+- [vite static-deploy](https://vitejs.dev/guide/static-deploy.html)
+- [deploy en github pages](https://www.youtube.com/watch?v=UX4gvort2TU)
+
+### 🕮 Recursos
+- [React: De cero a experto ( Hooks y MERN )](https://www.udemy.com/course/react-cero-experto/)
+- [React Router](https://reactrouter.com/en/main/start/tutorial)

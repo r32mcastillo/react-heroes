@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { HeroCard } from "../components/HeroCard";
 import { getHeroById } from "../helpers";
 
 export const HeroPage = () => {
@@ -16,14 +17,7 @@ export const HeroPage = () => {
 	return (
 		<>
 			<div className="ProductList">
-
-				<div className="ProductItem">
-
-					<img
-						src={`/assets/heroes/${id}.jpg`}
-						alt={hero.superhero}
-					/>
-				</div>
+				<HeroCard  {...hero} />
 				<div>
 
 					<h3>{hero.superhero}</h3>

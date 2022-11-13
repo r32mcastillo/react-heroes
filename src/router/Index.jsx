@@ -36,5 +36,5 @@ export const router = createBrowserRouter([
 	}
 
 ]
-	,{basename:'react-heroes/'}
+,{basename:'/react-heroes/'}
 );
